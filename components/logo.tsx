@@ -1,10 +1,8 @@
 'use client';
 
 import Image from 'next/image';
-import { useTranslation } from '@/hooks/useTranslation';
 
 export default function Logo() {
-  const { t } = useTranslation();
 
   return (
     <div className="flex items-center gap-2">
@@ -18,7 +16,7 @@ export default function Logo() {
         />
       </div>
       <span className="text-xl font-bold bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
-        {t('companyName')}
+        All In AIGC
       </span>
     </div>
   );

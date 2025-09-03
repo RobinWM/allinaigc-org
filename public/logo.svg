@@ -1,0 +1,82 @@
+<svg width="128" height="128" viewBox="0 0 128 128"
+  xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradient for the main circle -->
+    <linearGradient id="mainGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Gradient for the inner elements -->
+    <linearGradient id="innerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0.6" />
+    </linearGradient>
+
+    <!-- Neural network pattern -->
+    <pattern id="neuralPattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="1" fill="rgba(255,255,255,0.1)"/>
+      <line x1="5" y1="5" x2="15" y2="15" stroke="rgba(255,255,255,0.05)" stroke-width="0.5"/>
+      <line x1="15" y1="5" x2="5" y2="15" stroke="rgba(255,255,255,0.05)" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+
+  <!-- Main circle background -->
+  <circle cx="64" cy="64" r="60" fill="url(#mainGradient)" />
+
+  <!-- Neural network overlay -->
+  <circle cx="64" cy="64" r="58" fill="url(#neuralPattern)" opacity="0.3" />
+
+  <!-- Central AI core -->
+  <circle cx="64" cy="64" r="18" fill="url(#innerGradient)" />
+
+  <!-- AI neural nodes -->
+  <g fill="url(#innerGradient)">
+    <!-- Top nodes -->
+    <circle cx="64" cy="32" r="4" />
+    <circle cx="48" cy="40" r="3" />
+    <circle cx="80" cy="40" r="3" />
+
+    <!-- Middle nodes -->
+    <circle cx="32" cy="64" r="4" />
+    <circle cx="96" cy="64" r="4" />
+    <circle cx="40" cy="54" r="2.5" />
+    <circle cx="88" cy="54" r="2.5" />
+    <circle cx="40" cy="74" r="2.5" />
+    <circle cx="88" cy="74" r="2.5" />
+
+    <!-- Bottom nodes -->
+    <circle cx="64" cy="96" r="4" />
+    <circle cx="48" cy="88" r="3" />
+    <circle cx="80" cy="88" r="3" />
+  </g>
+
+  <!-- Neural connections -->
+  <g stroke="url(#innerGradient)" stroke-width="1.5" fill="none" opacity="0.8">
+    <!-- From center to main nodes -->
+    <line x1="64" y1="64" x2="64" y2="32" />
+    <line x1="64" y1="64" x2="32" y2="64" />
+    <line x1="64" y1="64" x2="96" y2="64" />
+    <line x1="64" y1="64" x2="64" y2="96" />
+
+    <!-- Interconnections -->
+    <line x1="48" y1="40" x2="40" y2="54" />
+    <line x1="80" y1="40" x2="88" y2="54" />
+    <line x1="48" y1="88" x2="40" y2="74" />
+    <line x1="80" y1="88" x2="88" y2="74" />
+
+    <!-- Cross connections -->
+    <path d="M 40 54 Q 64 48 88 54" />
+    <path d="M 40 74 Q 64 80 88 74" />
+  </g>
+
+  <!-- Central AI symbol -->
+  <g fill="rgba(59, 130, 246, 0.8)" transform="translate(64, 64)">
+    <!-- AI letters stylized -->
+    <path d="M -8 -6 L -4 6 L -2 6 L -3 3 L -5 3 L -6 6 L -8 6 Z M -4.5 0 L -3.5 0" stroke="rgba(59, 130, 246, 0.8)" stroke-width="0.5"/>
+    <rect x="2" y="-6" width="1.5" height="12" />
+    <rect x="2" y="-6" width="4" height="1.5" />
+    <rect x="2" y="-1" width="3" height="1.5" />
+  </g>
+</svg>

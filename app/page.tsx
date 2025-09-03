@@ -6,9 +6,6 @@ import { Brain, Globe, Code, Newspaper, Mic2, Navigation, Briefcase } from 'luci
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import Typewriter from 'typewriter-effect';
-import { useLanguage } from '@/components/language-provider';
-import { useTranslation } from '@/hooks/useTranslation';
-import { TranslationKey } from '@/lib/translations';
 
 const floatingAnimation = {
   y: ['-10%', '10%'],
@@ -41,47 +38,45 @@ const rotateAnimation = {
 
 const products = [
   {
-    titleKey: 'product1Title' as TranslationKey,
-    descriptionKey: 'product1Desc' as TranslationKey,
+    title: 'Wotushe',
+    description: 'AI Explorer, focused on creating educational content about AI series, suitable for learning and communication for those interested in AI.',
     image: "/images/wotushe.png",
     link: "https://www.52wts.cn"
   },
   {
-    titleKey: 'product2Title' as TranslationKey,
-    descriptionKey: 'product2Desc' as TranslationKey,
+    title: 'WTAIGC',
+    description: 'Sharing the latest and most comprehensive AI tools from around the world.',
     image: "/images/wtaigc.png",
     link: "https://www.wtaigc.com"
   },
   {
-    titleKey: 'product3Title' as TranslationKey,
-    descriptionKey: 'product3Desc' as TranslationKey,
+    title: 'WTAI Navigation',
+    description: 'High-quality, latest, and most comprehensive AI navigation.',
     image: "/images/wtai.png",
     link: "https://wtai.cc"
   },
   {
-    titleKey: 'product4Title' as TranslationKey,
-    descriptionKey: 'product4Desc' as TranslationKey,
+    title: 'WTSea',
+    description: 'Sharing experiences and solutions for overseas business challenges.',
     image: "/images/wtsea.png",
     link: "https://wtsea.cn"
   },
   {
-    titleKey: 'product5Title' as TranslationKey,
-    descriptionKey: 'product5Desc' as TranslationKey,
+    title: 'AI Translation Assistant',
+    description: 'All-in-one multilingual translation solution supporting text, image, PDF, voice, and video translation.',
     image: "/images/aitranslation.png",
     link: "https://aitranslate.site"
   },
   {
-    titleKey: 'product6Title' as TranslationKey,
-    descriptionKey: 'product6Desc' as TranslationKey,
+    title: 'VoiceCanvas',
+    description: 'Instant text-to-speech in over 40 languages, supporting voice cloning, delivering clear and natural voice synthesis based on advanced AI technology.',
     image: "/images/voicecanvas.png",
     link: "https://voicecanvas.org"
   }
 ];
 
 export default function Home() {
-  const { language } = useLanguage();
-  const { t } = useTranslation();
-  
+
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
@@ -97,7 +92,7 @@ export default function Home() {
               <h1 className="text-4xl md:text-6xl font-bold tracking-tight bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent min-h-[96px] md:min-h-[120px] flex items-center justify-center">
                 <Typewriter
                   options={{
-                    strings: [t('heroTitle1'), t('heroTitle2'), t('heroTitle3')],
+                    strings: ['Professional SEO & AI Tools', 'Transform Your Digital Presence', 'Future of Digital Marketing'],
                     autoStart: true,
                     loop: true,
                     deleteSpeed: 50,
@@ -112,7 +107,7 @@ export default function Home() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-xl md:text-2xl text-muted-foreground mb-8"
             >
-              {t('heroDescription')}
+              Professional SEO tools and AI-powered solutions to enhance your business digital presence and marketing effectiveness.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -121,15 +116,15 @@ export default function Home() {
               className="flex gap-4 justify-center"
             >
               <Button size="lg" className="bg-primary hover:bg-primary/90" asChild>
-                <a href="#products">{t('getStarted')}</a>
+                <a href="#products">Get Started</a>
               </Button>
               <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10" asChild>
-                <a href="#services">{t('learnMore')}</a>
+                <a href="#services">Learn More</a>
               </Button>
             </motion.div>
           </div>
         </div>
-        
+
         {/* Animated background elements */}
         <div className="absolute inset-0 overflow-hidden">
           {/* Floating blobs */}
@@ -156,11 +151,11 @@ export default function Home() {
               className="absolute -bottom-16 -right-16 w-32 h-32 border-2 border-primary/20 rotate-45"
               animate={{
                 rotate: [0, 360],
-                transition: { 
+                transition: {
                   duration: 20,
                   repeat: Infinity,
                   ease: 'linear',
-                  delay: 0.5 
+                  delay: 0.5
                 },
               }}
             />
@@ -168,11 +163,11 @@ export default function Home() {
               className="absolute -bottom-16 -left-16 w-24 h-24 border-2 border-primary/20"
               animate={{
                 rotate: [0, 360],
-                transition: { 
+                transition: {
                   duration: 20,
                   repeat: Infinity,
                   ease: 'linear',
-                  delay: 1 
+                  delay: 1
                 },
               }}
             />
@@ -180,11 +175,11 @@ export default function Home() {
               className="absolute -top-16 -right-16 w-24 h-24 border-2 border-primary/20 rounded-full"
               animate={{
                 rotate: [0, 360],
-                transition: { 
+                transition: {
                   duration: 20,
                   repeat: Infinity,
                   ease: 'linear',
-                  delay: 1.5 
+                  delay: 1.5
                 },
               }}
             />
@@ -200,12 +195,12 @@ export default function Home() {
               className="absolute -bottom-24 -right-24 w-2 h-2 bg-primary/40 rounded-full"
               animate={{
                 y: ['-10%', '10%'],
-                transition: { 
+                transition: {
                   duration: 2,
                   repeat: Infinity,
                   repeatType: 'reverse' as const,
                   ease: 'easeInOut',
-                  delay: 0.5 
+                  delay: 0.5
                 },
               }}
             />
@@ -213,12 +208,12 @@ export default function Home() {
               className="absolute -bottom-24 -left-24 w-2 h-2 bg-primary/40 rounded-full"
               animate={{
                 y: ['-10%', '10%'],
-                transition: { 
+                transition: {
                   duration: 2,
                   repeat: Infinity,
                   repeatType: 'reverse' as const,
                   ease: 'easeInOut',
-                  delay: 1 
+                  delay: 1
                 },
               }}
             />
@@ -226,12 +221,12 @@ export default function Home() {
               className="absolute -top-24 -right-24 w-3 h-3 bg-primary/40 rounded-full"
               animate={{
                 y: ['-10%', '10%'],
-                transition: { 
+                transition: {
                   duration: 2,
                   repeat: Infinity,
                   repeatType: 'reverse' as const,
                   ease: 'easeInOut',
-                  delay: 1.5 
+                  delay: 1.5
                 },
               }}
             />
@@ -240,7 +235,7 @@ export default function Home() {
 
         {/* Grid pattern with gradient overlay */}
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-[linear-gradient(to_right,theme(colors.primary/10)_1px,transparent_1px),linear-gradient(to_bottom,theme(colors.primary/10)_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black_70%)]" />
+          <div className="absolute inset-0 bg-[linear-gradient(to_right,hsl(142_76%_67%_/_0.1)_1px,transparent_1px),linear-gradient(to_bottom,hsl(142_76%_67%_/_0.1)_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black_70%)]" />
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/50 to-background" />
         </div>
       </section>
@@ -256,7 +251,7 @@ export default function Home() {
           >
             <h2 className="text-3xl font-bold text-center mb-12">
               <span className="bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
-                {t('ourServices')}
+                Our Services
               </span>
             </h2>
           </motion.div>
@@ -264,33 +259,33 @@ export default function Home() {
             {[
               {
                 icon: Newspaper,
-                title: t('aiNewsTitle'),
-                description: t('aiNewsDesc')
+                title: 'SEO Tools',
+                description: 'Comprehensive SEO tools and analytics to improve your website ranking and visibility.'
               },
               {
                 icon: Briefcase,
-                title: t('aiResearchTitle'),
-                description: t('aiResearchDesc')
+                title: 'AI-Powered Solutions',
+                description: 'Advanced AI tools to automate and optimize your digital marketing campaigns.'
               },
               {
                 icon: Code,
-                title: t('aiProgrammingTitle'),
-                description: t('aiProgrammingDesc')
+                title: 'Digital Marketing Tools',
+                description: 'Complete suite of digital marketing tools for businesses of all sizes.'
               },
               {
                 icon: Navigation,
-                title: t('aiNavigatorTitle'),
-                description: t('aiNavigatorDesc')
+                title: 'AI Navigator',
+                description: 'The most comprehensive and up-to-date collection of global AI tools.'
               },
               {
                 icon: Globe,
-                title: t('aiTranslationTitle'),
-                description: t('aiTranslationDesc')
+                title: 'AI Translation Services',
+                description: 'Advanced AI-powered translation services for seamless global communication.'
               },
               {
                 icon: Mic2,
-                title: t('aiVoiceTitle'),
-                description: t('aiVoiceDesc')
+                title: 'AI Voice Cloning',
+                description: 'Create natural-sounding voice clones for various applications.'
               }
             ].map((service, index) => (
               <motion.div
@@ -343,7 +338,7 @@ export default function Home() {
           >
             <h2 className="text-3xl font-bold text-center mb-12">
               <span className="bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
-                {t('ourProducts')}
+                Our Products
               </span>
             </h2>
           </motion.div>
@@ -361,7 +356,7 @@ export default function Home() {
                     <div className="relative h-48 overflow-hidden">
                       <Image
                         src={product.image}
-                        alt={product.titleKey}
+                        alt={product.title}
                         fill
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         className="object-cover transition-transform duration-300 group-hover:scale-105"
@@ -369,12 +364,12 @@ export default function Home() {
                     </div>
                     <CardHeader>
                       <CardTitle className="group-hover:text-primary transition-colors">
-                        {t(product.titleKey)}
+                        {product.title}
                       </CardTitle>
                     </CardHeader>
                     <CardContent className="flex-grow">
                       <p className="text-muted-foreground group-hover:text-foreground/80 transition-colors">
-                        {t(product.descriptionKey)}
+                        {product.description}
                       </p>
                     </CardContent>
                   </a>
@@ -396,11 +391,11 @@ export default function Home() {
           >
             <h2 className="text-3xl font-bold text-center mb-12">
               <span className="bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
-                {t('aboutUs')}
+                About Us
               </span>
             </h2>
           </motion.div>
-          
+
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
@@ -430,16 +425,16 @@ export default function Home() {
               className="space-y-6"
             >
               <div className="space-y-4">
-                <h3 className="text-2xl font-semibold text-primary">{t('ourVision')}</h3>
+                <h3 className="text-2xl font-semibold text-primary">Our Vision</h3>
                 <p className="text-muted-foreground">
-                  {t('visionDesc')}
+                  All In AIGC is dedicated to democratizing digital marketing technology, making professional SEO and AI tools accessible and beneficial for businesses worldwide. We believe in the transformative power of technology to create a more efficient, innovative, and connected digital world.
                 </p>
               </div>
 
               <div className="space-y-4">
-                <h3 className="text-2xl font-semibold text-primary">{t('ourMission')}</h3>
+                <h3 className="text-2xl font-semibold text-primary">Our Mission</h3>
                 <p className="text-muted-foreground">
-                  {t('missionDesc')}
+                  Our mission is to empower businesses through professional SEO tools and AI innovation, helping them achieve digital success and create a better future for all.
                 </p>
               </div>
 
@@ -449,7 +444,7 @@ export default function Home() {
                     <CardTitle className="text-4xl font-bold text-primary">3+</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-sm text-muted-foreground">{t('yearsOfInnovation')}</p>
+                    <p className="text-sm text-muted-foreground">Years of Innovation</p>
                   </CardContent>
                 </Card>
                 <Card className="bg-primary/5 border-primary/10">
@@ -457,7 +452,7 @@ export default function Home() {
                     <CardTitle className="text-4xl font-bold text-primary">100K+</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-sm text-muted-foreground">{t('globalUsers')}</p>
+                    <p className="text-sm text-muted-foreground">Global Users</p>
                   </CardContent>
                 </Card>
               </div>

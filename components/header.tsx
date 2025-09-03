@@ -2,24 +2,14 @@
 
 import { useState } from 'react';
 import { useTheme } from 'next-themes';
-import { useLanguage } from './language-provider';
 import { Button } from '@/components/ui/button';
-import { Moon, Sun, Globe, Menu, X } from 'lucide-react';
+import { Moon, Sun, Menu, X } from 'lucide-react';
 import Logo from './logo';
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from '@/components/ui/dropdown-menu';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { useTranslation } from '@/hooks/useTranslation';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const { theme, setTheme } = useTheme();
-  const { language, setLanguage } = useLanguage();
-  const { t } = useTranslation();
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -30,36 +20,20 @@ export default function Header() {
 
         <nav className="hidden md:flex items-center gap-6">
           <a href="/" className="text-foreground/60 hover:text-primary transition-colors">
-            {t('home')}
+            Home
           </a>
           <a href="#services" className="text-foreground/60 hover:text-primary transition-colors">
-            {t('services')}
+            Services
           </a>
           <a href="#products" className="text-foreground/60 hover:text-primary transition-colors">
-            {t('products')}
+            Products
           </a>
           <a href="#about" className="text-foreground/60 hover:text-primary transition-colors">
-            {t('about')}
+            About
           </a>
         </nav>
 
         <div className="flex items-center gap-2">
-          <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <Button variant="ghost" size="icon" className="hover:text-primary">
-                <Globe className="h-5 w-5" />
-              </Button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent align="end">
-              <DropdownMenuItem onClick={() => setLanguage('en')}>
-                English
-              </DropdownMenuItem>
-              <DropdownMenuItem onClick={() => setLanguage('zh')}>
-                中文
-              </DropdownMenuItem>
-            </DropdownMenuContent>
-          </DropdownMenu>
-
           <Button
             variant="ghost"
             size="icon"
@@ -80,16 +54,16 @@ export default function Header() {
             <SheetContent side="right" className="w-[250px] sm:w-[300px]">
               <div className="flex flex-col gap-6 mt-6">
                 <a href="/" className="text-foreground/60 hover:text-primary transition-colors">
-                  {t('home')}
+                  Home
                 </a>
                 <a href="#services" className="text-foreground/60 hover:text-primary transition-colors">
-                  {t('services')}
+                  Services
                 </a>
                 <a href="#products" className="text-foreground/60 hover:text-primary transition-colors">
-                  {t('products')}
+                  Products
                 </a>
                 <a href="#about" className="text-foreground/60 hover:text-primary transition-colors">
-                  {t('about')}
+                  About
                 </a>
               </div>
             </SheetContent>

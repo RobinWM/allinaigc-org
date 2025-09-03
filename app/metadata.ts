@@ -1,15 +1,9 @@
-import { Metadata } from 'next';
-import { getTranslation } from '@/lib/translations';
-
-type GenerateMetadataProps = {
-  language: 'en' | 'zh';
-};
-
-export function generateMetadata({ language }: GenerateMetadataProps): Metadata {
-  const title = getTranslation(language, 'metaTitle');
-  const description = getTranslation(language, 'metaDescription');
+export function generateMetadata() {
+  const title = 'All In AIGC - Leading SEO and AI Tools Provider';
+  const description = 'Professional SEO tools and AI-powered solutions for businesses. Discover our comprehensive suite of SEO and AI tools designed to enhance your digital presence';
 
   return {
+    metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || 'https://allinaigc.org'),
     title,
     description,
     icons: {
