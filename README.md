@@ -1,12 +1,12 @@
-# All In AIGC ltd - 现代 SEO 和 AI 工具企业网站
+# All In AIGC - 现代 SEO 和 AI 工具企业网站
 
-![All In AIGC ltd Logo](/public/logo.png)
+![All In AIGC Logo](/public/logo.png)
 
 ## 项目概述
 
-All In AIGC ltd 是一个现代化的 SEO 和 AI 工具企业展示网站，采用 Next.js 15 框架开发，结合了最新的 Web 技术和设计理念，为
-SEO 和 AI 工具企业提供了一个专业、现代的在线展示平台。网站支持多语言切换、暗黑模式、响应式设计等现代网站必备功能，并集成
-了 Google Analytics 进行用户行为分析。
+All In AIGC 是一个现代化的 SEO 和 AI 工具企业展示网站，采用 Next.js 15 框架开发，结合了最新的 Web 技术和设计理念，为 SEO
+和 AI 工具企业提供了一个专业、现代的在线展示平台。网站支持多语言切换、暗黑模式、响应式设计等现代网站必备功能，并集成了
+Google Analytics 进行用户行为分析。
 
 ## 主要功能
 

@@ -8,7 +8,7 @@ import ClientLayout from '@/components/client-layout';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'All In AIGC ltd - Leading SEO and AI Tools Provider',
+  title: 'All In AIGC - Leading SEO and AI Tools Provider',
   description: 'Professional SEO tools and AI-powered solutions for businesses. Discover our comprehensive suite of SEO and AI tools designed to enhance your digital presence.',
   icons: {
     icon: [
@@ -18,13 +18,13 @@ export const metadata: Metadata = {
     apple: '/logo.png',
   },
   openGraph: {
-    title: 'All In AIGC ltd - Leading SEO and AI Tools Provider',
+    title: 'All In AIGC - Leading SEO and AI Tools Provider',
     description: 'Professional SEO tools and AI-powered solutions for businesses. Discover our comprehensive suite of SEO and AI tools designed to enhance your digital presence.',
     images: ['/images/og-image.png'],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'All In AIGC ltd - Leading SEO and AI Tools Provider',
+    title: 'All In AIGC - Leading SEO and AI Tools Provider',
     description: 'Professional SEO tools and AI-powered solutions for businesses. Discover our comprehensive suite of SEO and AI tools designed to enhance your digital presence.',
     images: ['images/og-image.png'],
   },

@@ -1,11 +1,11 @@
 export const translations = {
   en: {
     // 元数据
-    metaTitle: 'All In AIGC ltd - Leading SEO and AI Tools Provider',
+    metaTitle: 'All In AIGC - Leading SEO and AI Tools Provider',
     metaDescription: 'Professional SEO tools and AI-powered solutions for businesses. Discover our comprehensive suite of SEO and AI tools designed to enhance your digital presence.',
 
     // 标题
-    companyName: 'All In AIGC ltd',
+    companyName: 'All In AIGC',
     // 首页
     heroTitle1: 'Professional SEO & AI Tools',
     heroTitle2: 'Transform Your Digital Presence',
@@ -46,9 +46,9 @@ export const translations = {
 
     // 关于部分
     aboutUs: 'About Us',
-    aboutDesc: 'All In AIGC ltd is a leading provider of professional SEO tools and AI-powered solutions. We specialize in helping businesses enhance their digital presence through innovative technology and comprehensive digital marketing tools.',
+    aboutDesc: 'All In AIGC is a leading provider of professional SEO tools and AI-powered solutions. We specialize in helping businesses enhance their digital presence through innovative technology and comprehensive digital marketing tools.',
     ourVision: 'Our Vision',
-    visionDesc: 'All In AIGC ltd is dedicated to democratizing digital marketing technology, making professional SEO and AI tools accessible and beneficial for businesses worldwide. We believe in the transformative power of technology to create a more efficient, innovative, and connected digital world.',
+    visionDesc: 'All In AIGC is dedicated to democratizing digital marketing technology, making professional SEO and AI tools accessible and beneficial for businesses worldwide. We believe in the transformative power of technology to create a more efficient, innovative, and connected digital world.',
     ourMission: 'Our Mission',
     missionDesc: 'Our mission is to empower businesses through professional SEO tools and AI innovation, helping them achieve digital success and create a better future for all.',
 
@@ -69,11 +69,11 @@ export const translations = {
   },
   zh: {
     // 元数据
-    metaTitle: 'All In AIGC ltd - 专业SEO和AI工具提供商',
+    metaTitle: 'All In AIGC - 专业SEO和AI工具提供商',
     metaDescription: '专业的SEO工具和AI驱动解决方案，为您的企业提供全面的SEO和AI工具套件，提升您的数字存在感',
 
     // 标题
-    companyName: 'All In AIGC ltd',
+    companyName: 'All In AIGC',
     // 首页
     heroTitle1: '专业SEO和AI工具',
     heroTitle2: '改变您的数字存在',
@@ -114,9 +114,9 @@ export const translations = {
 
     // 关于部分
     aboutUs: '关于我们',
-    aboutDesc: 'All In AIGC ltd是专业的SEO工具和AI驱动解决方案的领先提供商。我们专注于通过创新技术和全面的数字营销工具帮助企业提升数字存在感',
+    aboutDesc: 'All In AIGC是专业的SEO工具和AI驱动解决方案的领先提供商。我们专注于通过创新技术和全面的数字营销工具帮助企业提升数字存在感',
     ourVision: '我们的愿景',
-    visionDesc: 'All In AIGC ltd致力于普及数字营销技术，使专业的SEO和AI工具对全球企业都可访问且有益。我们相信技术的变革力量可以创造一个更高效、更创新、更互联的数字世界。',
+    visionDesc: 'All In AIGC致力于普及数字营销技术，使专业的SEO和AI工具对全球企业都可访问且有益。我们相信技术的变革力量可以创造一个更高效、更创新、更互联的数字世界。',
     ourMission: '我们的使命',
     missionDesc: '我们的使命是通过专业的SEO工具和AI创新赋能企业，帮助它们实现数字成功，创造一个更好的未来。',
 
