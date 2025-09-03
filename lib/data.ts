@@ -2,41 +2,23 @@
 
 export const products = [
   {
-    title: 'Wotushe',
-    description: 'AI Explorer, focused on creating educational content about AI series, suitable for learning and communication for those interested in AI.',
-    image: "/images/wotushe.png",
-    link: "https://www.52wts.cn"
+    title: 'AI Dirs',
+    description: 'Discover the top AI tools of 2025 with the AiDirs.org AI Directory! Explore the best and latest innovations in artificial intelligence technology.',
+    image: "/images/ai-dirs.png",
+    link: "https://aidirs.org"
   },
   {
-    title: 'WTAIGC',
-    description: 'Sharing the latest and most comprehensive AI tools from around the world.',
-    image: "/images/wtaigc.png",
-    link: "https://www.wtaigc.com"
+    title: 'Backlink Dirs',
+    description: 'Discover the website where you can build backlink with the backlinkdirs.com Directory! You can get the source where can be submit your website more faster,saving your huge time.',
+    image: "/images/backlink-dirs.png",
+    link: "https://backlinkdirs.com"
   },
   {
-    title: 'WTAI Navigation',
-    description: 'High-quality, latest, and most comprehensive AI navigation.',
-    image: "/images/wtai.png",
-    link: "https://wtai.cc"
+    title: 'GoKu AI',
+    description: 'Goku AI by ByteDance offers free access to advanced video generation technology, allowing users to create high-quality videos from text or images instantly.',
+    image: "/images/goku-ai.png",
+    link: "https://gokuai.top"
   },
-  {
-    title: 'WTSea',
-    description: 'Sharing experiences and solutions for overseas business challenges.',
-    image: "/images/wtsea.png",
-    link: "https://wtsea.cn"
-  },
-  {
-    title: 'AI Translation Assistant',
-    description: 'All-in-one multilingual translation solution supporting text, image, PDF, voice, and video translation.',
-    image: "/images/aitranslation.png",
-    link: "https://aitranslate.site"
-  },
-  {
-    title: 'VoiceCanvas',
-    description: 'Instant text-to-speech in over 40 languages, supporting voice cloning, delivering clear and natural voice synthesis based on advanced AI technology.',
-    image: "/images/voicecanvas.png",
-    link: "https://voicecanvas.org"
-  }
 ];
 
 // Services data for the services section
