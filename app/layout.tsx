@@ -4,13 +4,12 @@ import { Inter } from 'next/font/google';
 import { ThemeProvider } from '@/components/theme-provider';
 import { LanguageProvider } from '@/components/language-provider';
 import ClientLayout from '@/components/client-layout';
-import GoogleAnalytics from '@/components/google-analytics';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'ITUSI - Leading AI Innovation and Development',
-  description: 'Transform your business with cutting-edge AI solutions. Join us in shaping the future of technology.',
+  title: 'All In AIGC ltd - Leading SEO and AI Tools Provider',
+  description: 'Professional SEO tools and AI-powered solutions for businesses. Discover our comprehensive suite of SEO and AI tools designed to enhance your digital presence.',
   icons: {
     icon: [
       { url: '/favicon.ico', sizes: '32x32' },
@@ -19,14 +18,14 @@ export const metadata: Metadata = {
     apple: '/logo.png',
   },
   openGraph: {
-    title: 'ITUSI - Leading AI Innovation and Development',
-    description: 'Transform your business with cutting-edge AI solutions. Join us in shaping the future of technology.',
+    title: 'All In AIGC ltd - Leading SEO and AI Tools Provider',
+    description: 'Professional SEO tools and AI-powered solutions for businesses. Discover our comprehensive suite of SEO and AI tools designed to enhance your digital presence.',
     images: ['/images/og-image.png'],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'ITUSI - Leading AI Innovation and Development',
-    description: 'Transform your business with cutting-edge AI solutions. Join us in shaping the future of technology.',
+    title: 'All In AIGC ltd - Leading SEO and AI Tools Provider',
+    description: 'Professional SEO tools and AI-powered solutions for businesses. Discover our comprehensive suite of SEO and AI tools designed to enhance your digital presence.',
     images: ['images/og-image.png'],
   },
 };
@@ -48,7 +47,6 @@ export default function RootLayout({
   return (
     <html suppressHydrationWarning>
       <head>
-        <GoogleAnalytics />
       </head>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
