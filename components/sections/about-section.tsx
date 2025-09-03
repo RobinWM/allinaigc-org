@@ -34,7 +34,6 @@ export function AboutSection() {
                 src="/images/about-us.jpg"
                 alt="AI Innovation and Education"
                 fill
-                sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover"
               />
             </div>
