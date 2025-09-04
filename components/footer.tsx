@@ -25,9 +25,9 @@ export default function Footer() {
             <h4 className="font-medium mb-4 text-left md:text-right">Follow Us</h4>
             <div className="flex space-x-4 justify-start md:justify-end">
               <a
-                href="mailto:support@allinaigc.org"
+                href="mailto:support@allinaigc.org?subject=Contact%20from%20All%20In%20AIGC%20Website"
                 className="p-2 rounded-full hover:bg-muted transition-colors"
-                title="Contact Us"
+                title="Contact Us - support@allinaigc.org"
               >
                 <FaEnvelope size={20} />
               </a>
