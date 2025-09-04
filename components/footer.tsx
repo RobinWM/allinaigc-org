@@ -25,7 +25,7 @@ export default function Footer() {
             <h4 className="font-medium mb-4 text-left md:text-right">Follow Us</h4>
             <div className="flex space-x-4 justify-start md:justify-end">
               <a
-                href="mailto:contact@allinaigc.org"
+                href="mailto:support@allinaigc.org"
                 className="p-2 rounded-full hover:bg-muted transition-colors"
                 title="Contact Us"
               >
@@ -35,7 +35,24 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-8 pt-8 border-t text-center text-sm text-muted-foreground">
-          &copy; {new Date().getFullYear()} All In AIGC. All rights reserved.
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-4">
+            <a
+              href="/terms"
+              className="hover:text-primary transition-colors underline"
+            >
+              Terms of Service
+            </a>
+            <span className="hidden sm:inline">•</span>
+            <a
+              href="/privacy"
+              className="hover:text-primary transition-colors underline"
+            >
+              Privacy Policy
+            </a>
+          </div>
+          <div>
+            &copy; {new Date().getFullYear()} All In AIGC. All rights reserved.
+          </div>
         </div>
       </div>
     </footer>

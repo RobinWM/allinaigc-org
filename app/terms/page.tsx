@@ -402,10 +402,7 @@ export default function TermsPage() {
                     <h4 className="font-medium text-slate-800 dark:text-slate-200 mb-3">Contact Details</h4>
                     <div className="space-y-2 text-sm">
                       <p className="text-slate-700 dark:text-slate-300">
-                        <strong>Email:</strong> legal@allinaigc.org
-                      </p>
-                      <p className="text-slate-700 dark:text-slate-300">
-                        <strong>Support:</strong> support@allinaigc.org
+                        <strong>Email:</strong> support@allinaigc.org
                       </p>
                       <p className="text-slate-700 dark:text-slate-300">
                         <strong>Address:</strong> Suite 13909 61 Bridge Street, Kington, United Kingdom, HR5 3DJ
