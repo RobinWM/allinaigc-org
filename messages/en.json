@@ -1,0 +1,94 @@
+{
+  "AboutSection": {
+    "globalUsers": "Global Users",
+    "missionContent": "Our mission is to empower businesses through professional SEO tools and AI innovation, helping them achieve digital success and create a better future for all.",
+    "missionTitle": "Our Mission",
+    "title": "About Us",
+    "visionContent": "All In AIGC is dedicated to democratizing digital marketing technology, making professional SEO and AI tools accessible and beneficial for businesses worldwide. We believe in the transformative power of technology to create a more efficient, innovative, and connected digital world.",
+    "visionTitle": "Our Vision",
+    "yearsOfInnovation": "Years of Innovation"
+  },
+  "Footer": {
+    "companyDescription": "Professional SEO tools and AI-powered solutions for businesses",
+    "companyName": "All In AIGC",
+    "contactTitle": "Contact Us - support@allinaigc.org",
+    "copyright": "All In AIGC.Ltd All rights reserved.",
+    "followUs": "Follow Us",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service"
+  },
+  "HeroSection": {
+    "description": "Professional SEO tools and AI-powered solutions to enhance your business digital presence and marketing effectiveness.",
+    "getStartedButton": "Get Started",
+    "learnMoreButton": "Learn More",
+    "typewriterStrings": [
+      "Professional SEO & AI Tools",
+      "Transform Your Digital Presence",
+      "Future of Digital Marketing"
+    ]
+  },
+  "HomePage": {
+    "title": "Hello world!"
+  },
+  "LanguageSwitcher": {
+    "current": "Current"
+  },
+  "Navigation": {
+    "about": "About",
+    "home": "Home",
+    "products": "Products",
+    "services": "Services"
+  },
+  "ProductsSection": {
+    "products": [
+      {
+        "description": "Discover the top AI tools of 2025 with the AiDirs.org AI Directory! Explore the best and latest innovations in artificial intelligence technology.",
+        "image": "/images/ai-dirs.png",
+        "link": "https://aidirs.org",
+        "title": "AI Dirs"
+      },
+      {
+        "description": "Discover the website where you can build backlink with the backlinkdirs.com Directory! You can get the source where can be submit your website more faster,saving your huge time.",
+        "image": "/images/backlink-dirs.png",
+        "link": "https://backlinkdirs.com",
+        "title": "Backlink Dirs"
+      },
+      {
+        "description": "Goku AI by ByteDance offers free access to advanced video generation technology, allowing users to create high-quality videos from text or images instantly.",
+        "image": "/images/goku-ai.png",
+        "link": "https://gokuai.top",
+        "title": "GoKu AI"
+      }
+    ],
+    "title": "Our Products"
+  },
+  "ServicesSection": {
+    "services": [
+      {
+        "description": "Comprehensive SEO tools and analytics to improve your website ranking and visibility.",
+        "title": "SEO Tools"
+      },
+      {
+        "description": "Advanced AI tools to automate and optimize your digital marketing campaigns.",
+        "title": "AI-Powered Solutions"
+      },
+      {
+        "description": "Complete suite of digital marketing tools for businesses of all sizes.",
+        "title": "Digital Marketing Tools"
+      },
+      {
+        "description": "The most comprehensive and up-to-date collection of global AI tools.",
+        "title": "AI Navigator"
+      },
+      {
+        "description": "Advanced AI-powered translation services for seamless global communication.",
+        "title": "AI Translation Services"
+      },
+      {
+        "description": "Create natural-sounding voice clones for various applications.",
+        "title": "AI Voice Cloning"
+      }
+    ],
+    "title": "Our Services"
+  }
+}

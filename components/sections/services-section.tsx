@@ -3,11 +3,12 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Newspaper, Mic2, Navigation, Briefcase, Code, Globe } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { services } from '@/lib/data';
+import { useTranslations } from 'next-intl';
 
 const serviceIcons = [Newspaper, Briefcase, Code, Navigation, Globe, Mic2];
 
 export function ServicesSection() {
+  const t = useTranslations('ServicesSection');
   return (
     <section id="services" className="py-20">
       <div className="container">
@@ -19,12 +20,12 @@ export function ServicesSection() {
         >
           <h2 className="text-3xl font-bold text-center mb-12">
             <span className="bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
-              Our Services
+              {t('title')}
             </span>
           </h2>
         </motion.div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {services.map((service, index) => {
+          {t.raw('services').map((service: any, index: number) => {
             const Icon = serviceIcons[index];
             return (
               <motion.div

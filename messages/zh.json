@@ -1,0 +1,94 @@
+{
+  "AboutSection": {
+    "globalUsers": "全球用户",
+    "missionContent": "我们的使命是通过专业的SEO工具和AI创新为企业赋能，帮助他们实现数字化成功，为所有人创造更美好的未来。",
+    "missionTitle": "我们的使命",
+    "title": "关于我们",
+    "visionContent": "All In AIGC 致力于数字营销技术的民主化，让专业的SEO和AI工具为全球企业所用，造福世界。我们相信技术的变革力量，能够创造一个更高效、更创新、更互联的数字世界。",
+    "visionTitle": "我们的愿景",
+    "yearsOfInnovation": "创新年数"
+  },
+  "Footer": {
+    "companyDescription": "为企业提供专业的SEO工具和AI驱动的解决方案",
+    "companyName": "All In AIGC",
+    "contactTitle": "联系我们 - support@allinaigc.org",
+    "copyright": "All In AIGC.Ltd 保留所有权利。",
+    "followUs": "关注我们",
+    "privacyPolicy": "隐私政策",
+    "termsOfService": "服务条款"
+  },
+  "HeroSection": {
+    "description": "专业的SEO工具和AI驱动的解决方案，提升您的企业数字化形象和营销效果。",
+    "getStartedButton": "立即开始",
+    "learnMoreButton": "了解更多",
+    "typewriterStrings": [
+      "专业 SEO 和 AI 工具",
+      "改变您的数字化形象",
+      "数字营销的未来"
+    ]
+  },
+  "HomePage": {
+    "title": "Hello world!"
+  },
+  "LanguageSwitcher": {
+    "current": "当前"
+  },
+  "Navigation": {
+    "about": "关于",
+    "home": "首页",
+    "products": "产品",
+    "services": "服务"
+  },
+  "ProductsSection": {
+    "products": [
+      {
+        "description": "通过 AiDirs.org AI 目录发现2025年顶级AI工具！探索人工智能技术的最佳和最新创新。",
+        "image": "/images/ai-dirs.png",
+        "link": "https://aidirs.org",
+        "title": "AI Dirs"
+      },
+      {
+        "description": "通过 backlinkdirs.com 目录发现可以建立反向链接的网站！您可以获得更快提交网站的资源，节省大量时间。",
+        "image": "/images/backlink-dirs.png",
+        "link": "https://backlinkdirs.com",
+        "title": "Backlink Dirs"
+      },
+      {
+        "description": "字节跳动的 Goku AI 提供免费的先进视频生成技术，让用户可以从文本或图像即时创建高质量视频。",
+        "image": "/images/goku-ai.png",
+        "link": "https://gokuai.top",
+        "title": "GoKu AI"
+      }
+    ],
+    "title": "我们的产品"
+  },
+  "ServicesSection": {
+    "services": [
+      {
+        "description": "全面的SEO工具和分析，提升您的网站排名和可见度。",
+        "title": "SEO 工具"
+      },
+      {
+        "description": "先进的AI工具，自动化和优化您的数字营销活动。",
+        "title": "AI 驱动解决方案"
+      },
+      {
+        "description": "适合各种规模企业的完整数字营销工具套件。",
+        "title": "数字营销工具"
+      },
+      {
+        "description": "最全面、最新的全球AI工具集合。",
+        "title": "AI 导航"
+      },
+      {
+        "description": "先进的AI驱动翻译服务，实现无缝的全球沟通。",
+        "title": "AI 翻译服务"
+      },
+      {
+        "description": "为各种应用创建自然的语音克隆。",
+        "title": "AI 语音克隆"
+      }
+    ],
+    "title": "我们的服务"
+  }
+}

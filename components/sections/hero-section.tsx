@@ -4,8 +4,12 @@ import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
 import Typewriter from 'typewriter-effect';
 import { floatingAnimation, rotateAnimation } from '@/lib/constants';
+import { useTranslations } from 'next-intl';
+
 
 export function HeroSection() {
+  const t = useTranslations('HeroSection');
+
   return (
     <section className="relative py-16 md:py-24 overflow-hidden bg-gradient-to-b from-primary/5 via-primary/10 to-background">
       <div className="container relative z-10">
@@ -19,7 +23,7 @@ export function HeroSection() {
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent min-h-[96px] md:min-h-[120px] flex items-center justify-center">
               <Typewriter
                 options={{
-                  strings: ['Professional SEO & AI Tools', 'Transform Your Digital Presence', 'Future of Digital Marketing'],
+                  strings: t.raw('typewriterStrings') as string[],
                   autoStart: true,
                   loop: true,
                   deleteSpeed: 50,
@@ -34,7 +38,7 @@ export function HeroSection() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-xl md:text-2xl text-muted-foreground mb-8"
           >
-            Professional SEO tools and AI-powered solutions to enhance your business digital presence and marketing effectiveness.
+            {t('description')}
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -43,10 +47,10 @@ export function HeroSection() {
             className="flex gap-4 justify-center"
           >
             <Button size="lg" className="bg-primary hover:bg-primary/90" asChild>
-              <a href="#products">Get Started</a>
+              <a href="#products">{t('getStartedButton')}</a>
             </Button>
             <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10" asChild>
-              <a href="#services">Learn More</a>
+              <a href="#services">{t('learnMoreButton')}</a>
             </Button>
           </motion.div>
         </div>

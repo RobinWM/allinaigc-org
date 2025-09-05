@@ -1,11 +1,17 @@
 import { Metadata } from 'next';
+import { use } from 'react';
+import { setRequestLocale } from 'next-intl/server';
 
 export const metadata: Metadata = {
   title: 'Privacy Policy - All In AIGC',
   description: 'Privacy Policy and Data Protection Statement of All In AIGC',
 };
 
-export default function PrivacyPage() {
+export default function PrivacyPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = use(params);
+
+  setRequestLocale(locale);
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">

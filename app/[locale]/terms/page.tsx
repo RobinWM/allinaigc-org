@@ -1,11 +1,17 @@
 import { Metadata } from 'next';
+import { use } from 'react';
+import { setRequestLocale } from 'next-intl/server';
 
 export const metadata: Metadata = {
   title: 'Terms of Service - All In AIGC',
   description: 'Terms of Service and User Agreement of All In AIGC',
 };
 
-export default function TermsPage() {
+export default function TermsPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = use(params);
+
+  setRequestLocale(locale);
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">

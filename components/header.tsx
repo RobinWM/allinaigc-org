@@ -6,10 +6,13 @@ import { Button } from '@/components/ui/button';
 import { Moon, Sun, Menu, X } from 'lucide-react';
 import Logo from './logo';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { useTranslations } from 'next-intl';
+import LanguageSwitcher from './language-switcher';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const { theme, setTheme } = useTheme();
+  const t = useTranslations('Navigation');
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -20,20 +23,21 @@ export default function Header() {
 
         <nav className="hidden md:flex items-center gap-6">
           <a href="/" className="text-foreground/60 hover:text-primary transition-colors">
-            Home
+            {t('home')}
           </a>
           <a href="#services" className="text-foreground/60 hover:text-primary transition-colors">
-            Services
+            {t('services')}
           </a>
           <a href="#products" className="text-foreground/60 hover:text-primary transition-colors">
-            Products
+            {t('products')}
           </a>
           <a href="#about" className="text-foreground/60 hover:text-primary transition-colors">
-            About
+            {t('about')}
           </a>
         </nav>
 
         <div className="flex items-center gap-2">
+          <LanguageSwitcher />
           <Button
             variant="ghost"
             size="icon"
@@ -54,17 +58,20 @@ export default function Header() {
             <SheetContent side="right" className="w-[250px] sm:w-[300px]">
               <div className="flex flex-col gap-6 mt-6">
                 <a href="/" className="text-foreground/60 hover:text-primary transition-colors">
-                  Home
+                  {t('home')}
                 </a>
                 <a href="#services" className="text-foreground/60 hover:text-primary transition-colors">
-                  Services
+                  {t('services')}
                 </a>
                 <a href="#products" className="text-foreground/60 hover:text-primary transition-colors">
-                  Products
+                  {t('products')}
                 </a>
                 <a href="#about" className="text-foreground/60 hover:text-primary transition-colors">
-                  About
+                  {t('about')}
                 </a>
+                <div className="pt-4 border-t">
+                  <LanguageSwitcher />
+                </div>
               </div>
             </SheetContent>
           </Sheet>

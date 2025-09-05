@@ -3,8 +3,10 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import { useTranslations } from 'next-intl';
 
 export function AboutSection() {
+  const t = useTranslations('AboutSection');
   return (
     <section id="about" className="py-20 bg-gradient-to-b from-background to-primary/5">
       <div className="container">
@@ -16,7 +18,7 @@ export function AboutSection() {
         >
           <h2 className="text-3xl font-bold text-center mb-12">
             <span className="bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
-              About Us
+              {t('title')}
             </span>
           </h2>
         </motion.div>
@@ -49,16 +51,16 @@ export function AboutSection() {
             className="space-y-6"
           >
             <div className="space-y-4">
-              <h3 className="text-2xl font-semibold text-primary">Our Vision</h3>
+              <h3 className="text-2xl font-semibold text-primary">{t('visionTitle')}</h3>
               <p className="text-muted-foreground">
-                All In AIGC is dedicated to democratizing digital marketing technology, making professional SEO and AI tools accessible and beneficial for businesses worldwide. We believe in the transformative power of technology to create a more efficient, innovative, and connected digital world.
+                {t('visionContent')}
               </p>
             </div>
 
             <div className="space-y-4">
-              <h3 className="text-2xl font-semibold text-primary">Our Mission</h3>
+              <h3 className="text-2xl font-semibold text-primary">{t('missionTitle')}</h3>
               <p className="text-muted-foreground">
-                Our mission is to empower businesses through professional SEO tools and AI innovation, helping them achieve digital success and create a better future for all.
+                {t('missionContent')}
               </p>
             </div>
 
@@ -68,7 +70,7 @@ export function AboutSection() {
                   <CardTitle className="text-4xl font-bold text-primary">3+</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm text-muted-foreground">Years of Innovation</p>
+                  <p className="text-sm text-muted-foreground">{t('yearsOfInnovation')}</p>
                 </CardContent>
               </Card>
               <Card className="bg-primary/5 border-primary/10">
@@ -76,7 +78,7 @@ export function AboutSection() {
                   <CardTitle className="text-4xl font-bold text-primary">100K+</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm text-muted-foreground">Global Users</p>
+                  <p className="text-sm text-muted-foreground">{t('globalUsers')}</p>
                 </CardContent>
               </Card>
             </div>

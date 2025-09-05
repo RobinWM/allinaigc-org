@@ -3,9 +3,10 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { products } from '@/lib/data';
+import { useTranslations } from 'next-intl';
 
 export function ProductsSection() {
+  const t = useTranslations('ProductsSection');
   return (
     <section id="products" className="py-20 bg-muted/50">
       <div className="container">
@@ -17,12 +18,12 @@ export function ProductsSection() {
         >
           <h2 className="text-3xl font-bold text-center mb-12">
             <span className="bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
-              Our Products
+              {t('title')}
             </span>
           </h2>
         </motion.div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {products.map((product, index) => (
+          {t.raw('products').map((product: any, index: number) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
