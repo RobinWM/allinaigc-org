@@ -6,5 +6,7 @@ export const routing = defineRouting({
 
   // Used when no locale matches
   defaultLocale: 'en',
-  localePrefix: 'as-needed'
+  localePrefix: 'as-needed',
+  // 禁用浏览器语言检测，强制使用默认语言
+  localeDetection: false
 });
