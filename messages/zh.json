@@ -21,11 +21,7 @@
     "description": "专业的SEO工具和AI驱动的解决方案，提升您的企业数字化形象和营销效果。",
     "getStartedButton": "立即开始",
     "learnMoreButton": "了解更多",
-    "typewriterStrings": [
-      "专业 SEO 和 AI 工具",
-      "改变您的数字化形象",
-      "数字营销的未来"
-    ]
+    "typewriterStrings": ["专业 SEO 和 AI 工具", "改变您的数字化形象", "数字营销的未来"]
   },
   "HomePage": {
     "title": "Hello world!"
@@ -54,10 +50,10 @@
         "title": "Backlink Dirs"
       },
       {
-        "description": "字节跳动的 Goku AI 提供免费的先进视频生成技术，让用户可以从文本或图像即时创建高质量视频。",
-        "image": "/images/goku-ai.png",
-        "link": "https://gokuai.top",
-        "title": "GoKu AI"
+        "description": "TextToAny 是一个 AI 多模态生成平台，可以将文本转化为任何内容——图像、视频、音频、音乐等。用一个文本提示创建无限内容。",
+        "image": "/images/text-to-any.png",
+        "link": "https://texttoany.com",
+        "title": "Text To Any"
       }
     ],
     "title": "我们的产品"

@@ -54,10 +54,10 @@
         "title": "Backlink Dirs"
       },
       {
-        "description": "Goku AI by ByteDance offers free access to advanced video generation technology, allowing users to create high-quality videos from text or images instantly.",
-        "image": "/images/goku-ai.png",
-        "link": "https://gokuai.top",
-        "title": "GoKu AI"
+        "description": "Text To Any is an AI multimodal generation platform that turns text into anything — images, videos, audio, music, and more. Create unlimited content with one text prompt.",
+        "image": "/images/text-to-any.png",
+        "link": "https://texttoany.com",
+        "title": "Text To Any"
       }
     ],
     "title": "Our Products"
